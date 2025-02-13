@@ -1,0 +1,57 @@
+.Header {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #197686;
+  background: rgba(5, 37, 44, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.LogoCtn {
+  margin: 0;
+}
+
+.nav {
+  gap: 16px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav li {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 580px) {
+  .Header {
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    padding: 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    border-radius: 12px;
+    border: 1px solid #197686;
+    background: rgba(5, 37, 44, 0.4);
+    backdrop-filter: blur(2px);
+  }
+  .nav {
+    display: none;
+  }
+  
+}

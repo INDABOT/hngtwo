@@ -1,0 +1,78 @@
+/* ProgressBar.module.css */
+.progressContainer {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    background: transparent;
+  }
+  
+  .progressHeader {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .title {
+    color: #FFF;
+    margin: 0;
+    font-family: JejuMyeongjo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+  }
+  
+  .stepCount {
+    color: var(--color-grey-98, #FAFAFA);
+
+    /* Text/Regular/Normal */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  
+  .progressBar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background: #24a0b5;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Buttons */
+  .navButtons {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    background: #24a0b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background: #197686;
+  }
+  
+  .button:disabled {
+    background: rgba(36, 160, 181, 0.5);
+    cursor: not-allowed;
+  }
+  
